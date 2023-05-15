@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="reageCalculator" class="container">
+        <label id="reageTitle"><b>Reage Calculator</b></label><br><br>
+        <label id="reageInstructions">Enter Highest Bucket:</label><br><br>
+        <input type="number" id="reageNum" class="size">
+        <label id="reageMultiplier"><b>1.10</b></label><br><br>
+        <label for="result">Result:</label>
+        <input type="text" id="reageClac" class="size" readonly value="0"><br>
+        <label id="roundUpMessage" style="display:none">Make sure to round up!</label><br>
+        <button type="button" id="reageSubmitButton">Calculate</button>
+        <button type="reset" id="reageResetButton">Reset</button>
+    </div>
+
+    <div id="minSettlementCalc" class="container">
+	<label id="settlementTitle"><b>Settlement Calculator</b></label><br><br>
+	<label id="settlementInstructions">Enter Account Balance:</label><br><br>
+    <input type="number" id="settlementBal" class="size"><br><br>
+
+	<label id="settlementPercentageTitle">Enter Percentage (e.g. 25 = 25%):</label><br><br>
+	<input type="number" id="settlementPercentage" class="size">
+	<label id="percentagesymbol"><b>%</b></label><br><br>
+
+	<label for="result">Settlement Amount:</label>
+	<input type="text" id="settlementCalc" class="size" readonly value="0"><br><br>
+	<button type="button" id="settlementSubmitButton">Calculate</button>
+    <button type="reset" id="settlementResetButton">Reset</button>
+    </div>
+
+    <div id="ltPayerCalc" class="container">
+	<label id="ltPayerTitle"><b>Long-Term Payer</b></label><br><br>
+	<label id="ltPayerInstructions">Enter Account Balance:</label><br><br>
+	<input type="number" id="ltPayerBal" class="size"><br><br>
+	<label for="onePercent">1% of Balance:</label><br>
+    <input type="text" id="onePercentCalc" class="size" readonly value="0"><br><br>
+	<label for="numOfPayments">Number of Payments after initial:</label>
+    <input type="text" id="numOfPaymentsCalc" class="size" readonly value="0"><br><br>
+	<button type="button" id="ltPayerSubmitButton">Calculate</button>
+	<button type="reset" id="ltPayerResetButton">Reset</button><br><br>
+    </div>
+
+    <div id="ltPayerCalc2" class="container">
+	<label id="lowerThanOnePercent"><b>Less Than 1% Payments</b></label><br><br>
+	<label for="customerPaymentsInstructions">How much can Customer Pay:</label><br>
+    <input type="number" id="customerPayments" class="size"><br><br>
+	<label for="numOfPayments2">Number of Payments after initial:</label>
+	<input type="text" id="numOfPaymentsCalc2" class="size" readonly value="0"><br><br>
+	<button type="button" id="ltPayerSubmitButton2">Calculate</button>
+	<button type="reset" id="ltPayerResetButton2">Reset</button><br><br>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>	
